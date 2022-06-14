@@ -1341,7 +1341,6 @@ int main(int argc, char **argv)
 				seed = generate_srand_seed();
 			srand(seed);
 
-			cpu_affinity(ctx.cpu_start + i);
 			main_loop(&ctx, confname, slow, i, invoke_cpp,
 				  cpp_argv, orig_num);
 
